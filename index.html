@@ -1,0 +1,148 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen</title>
+    <style>
+        body {
+            background: white;
+            border: 1px solid #e4dcad;
+            border-radius: 4px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            margin: 50px;
+            color: #062113;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 50px;
+
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            border: 2px double #212727;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        img {
+            display: block;
+            max-width: 90%;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+
+        hr {
+            margin: 30px;
+            border: 2px double #062121;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 15px;
+            margin: 20px 0 15px;
+            padding: 20px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background: #062121;
+            color: #e4dcad;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            transition: 200ms;
+        }
+
+        button:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .container {
+            background: #e4dcad;
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 60px;
+            border-radius: 4px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0.5, 0.5);
+        }
+
+        .footer {
+            display: block;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .learn-more {
+            font-size: 15px;
+            font-weight: normal;
+            display: block;
+            text-decoration: none;
+            color: #062121;
+            padding: 0 20px;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><em>I love Ramen</em> 🍜</h1>
+        <h2>Especially Tonkatsu Ramen</h2>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/852/original/30534-ramen-wallpaper-preview.jpeg?1671067718"
+            alt="bowl of ramen">
+
+        <hr class="line">
+
+        <p>Ramen is a Japanese noodle dish. It consists of Chinese-style
+            wheat noodles served in a broth; common flavors are soy sauce and miso, with typical toppings
+            including sliced pork (chāshū), nori (dried seaweed), menma (bamboo shoots), and scallions. Ramen has its
+            roots
+            in
+            Chinese noodle dishes. Nearly every region in Japan has its own variation of ramen, such as the tonkotsu
+            (pork
+            bone
+            broth) ramen of Kyushu and the miso ramen of Hokkaido.
+        </p>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Ramen" target="_blank" class="learn-more">Learn more on
+            <strong>Wikipedia</strong></a>
+        <button class="buy-button">
+            🍜 Try Tonkatsu Ramen
+        </button>
+        <span class="footer">This page was built by <strong>Domeneack Foster</strong>👩🏾&zwj;💻</span>
+    </div>
+    <script>
+        function buy() {
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            let emoji = prompt("What is your favorite emoji?");
+
+            if (name.length > 0 || email.length > 0) {
+                alert("Thank you " + name + "! We'll be in touch by email, meanwhile enjoy a bowl of ramen!" + emoji);
+            } else {
+                alert("Thank you! Enjoy a bowl of ramen!🍜");
+            }
+
+        }
+
+        let buybutton = document.querySelector(".buy-button");
+        buybutton.addEventListener("click", buy);
+    </script>
+
+
+</body>
+
+</html>
